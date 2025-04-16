@@ -16,6 +16,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1100;
+    
 }
 .header {
     background-color: #008060;
@@ -43,6 +44,23 @@ h1 {
 h1 {
     text-align: center;
     color: #f3f1f1;
+
+}
+h2 {
+    text-align: center;
+    color: #e80f0f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #e21313;
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    z-index: 1100;
+
 }
 .menu{
     margin-left: auto;
@@ -213,3 +231,10 @@ footer {
 
     }
 }
+.checkout{
+    width: 25%;
+    transform: translate(-100%, 1%);
+    }
+    .centralizado {
+        text-align: center;
+      }
