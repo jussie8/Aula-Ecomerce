@@ -1,8 +1,11 @@
+* {
+    /* border: 1px solid red ; */
+}
+
 
 .hamburguer {
     display: none;
 }
-
 
 h1 {
     font-family: Arial, sans-serif;
@@ -66,6 +69,9 @@ h2 {
     margin-left: auto;
     margin-top: 40px;
     background-color: #7e928d;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px ;
 }
 .menu {
     position:relative
@@ -75,6 +81,7 @@ h2 {
     margin: 0;
     padding: 0;
     display: flex;
+  
 }
 .menu ul li {
     margin-left: 20px;
@@ -89,6 +96,11 @@ h2 {
 .menu ul li a:hover {
     background-color: rgba(28, 209, 37, 0.507);
     border-radius: 5px;
+}
+
+.menu img {
+    width: 50px;
+    height: auto;
 }
 
 .cta {
@@ -194,6 +206,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 220px;
     flex-wrap: wrap;
+    margin-top: 300px;
 }
 
 .card {
@@ -250,7 +263,8 @@ footer {
         margin: 0 auto;
         height: 500px;
         margin-top: 100px;
-        overflow: visible; /* Mostra sombras que ultrapassam */
+        overflow: visible;
+        position: relative; /* Mostra sombras que ultrapassam */
     }
     
     .carousel-item {
@@ -279,16 +293,9 @@ footer {
     
     .carousel-control-prev,
 .carousel-control-next {
-    width: 30px; /* Tamanho dos botões */
-    height: 30px; /* Tamanho dos botões */
-    top: 50%; /* Posiciona os botões no meio do carrossel */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    background-color: rgba(0, 0, 0, 0.3); /* Cor semitransparente de fundo */
-    border-radius: 50%; /* Tornar os botões circulares */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1050; /* Garante que os botões fiquem acima do conteúdo */
+    
+    height: 0px; /* Tamanho dos botões */
+    
 }
 
 .carousel-control-prev-icon,
@@ -296,13 +303,19 @@ footer {
     width: 16px; /* Tamanho do ícone dentro do botão */
     height: 16px; /* Tamanho do ícone dentro do botão */
     background-size: contain;
-    filter: brightness(0) invert(1); /* Ícones brancos */
+    filter: brightness(3) invert(3); /* Ícones brancos */
+    position: absolute;
+    top: 170px;
+    right: 500px;
+   
 }
 
-.carousel-control-prev {
-    left: 10px; /* Distância da borda esquerda */
-}
+.carrinhoinicial:hover {
+    transform: scale(2.05);
+    top:0px;
+   }
+   
 
-.carousel-control-next {
-    right: 10px; /* Distância da borda direita */
-}
+
+
+

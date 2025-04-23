@@ -17,20 +17,26 @@
         <input type="email" placeholder="Pesquisa">
         <button class="cta">Aperte aqui</button>
         <div class="hamburguer">
-            <i class="fa-solid fa-bars" style="color: #faffff;"></i>
-        </div>
-        <nav class="menu">
-            <ul>
+            
+        <i class="fa-solid fa-bars" style="color: #faffff;"></i>
+             
+            
+          </div>
+            <nav class="menu">
+             <ul>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
+             </ul>
+             <a href="carrinho.html">
+                <img src="carrinho.png" alt="Carrinho" class="carrinhoinicial">
+              </a>
+             </nav>
+             </div>
 
-    <div class="vitrine-container">
-        <div class="vitrine">
+          <div class="vitrine-container">
+          <div class="vitrine">
             <img src="2.png" alt="Imagem" class="card">
             <h3>Placa de vídeo 1</h3>
             <p>Preço</p>
@@ -57,10 +63,7 @@
         </div>
     </div>
 
-    
-
-<!-- Carrossel com botões -->
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="promo 1.png" class="d-block w-100" alt="promo 1">
@@ -79,7 +82,7 @@
         </div>
     </div>
 
-    <!-- Botões -->
+   
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
@@ -88,6 +91,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Próximo</span>
     </button>
+    
 </div>
 
         
@@ -96,7 +100,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Script para abrir/fechar o menu hamburguer
+      
         document.querySelector(".hamburguer").addEventListener("click", function() {
             const menu = document.querySelector(".menu");
             menu.classList.toggle("show");
